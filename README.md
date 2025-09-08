@@ -1,11 +1,5 @@
 # Tetris AI Challenge
 
-This is a Tetris game build with React, with AI competition mode integrated.
-### Open [tetris.zackhu.com](https://tetris.zackhu.com) to play!
-### AI Competition Mode
-![AI competition mode](./Demo/AI_illustration.gif)
-
-
 ### Feature:
 - This project's frontend is developed with React, Nextjs, tailwindCSS and Zustand.
 - Backend AI model is deployed on an AWS EC2 server.
