@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #;
+  --secondary: #;
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: white;
+  background-color: #ddbea9;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.timer-char {
+  width: 8rem;
+  flex: 1;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .timer-char {
+    font-size: 1rem;
+  }
+}
+
+.title {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.setting {
+  /* color: #ddbea9; */
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.control {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.control-panel {
+  font-size: 3rem;
+  /* color: #ddbea9; */
+}
+
+.control-panel .controls-container .control-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.key-icon.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24rem;
+  height: 10rem;
+  background-color: #ddbea9;
+  /* background-color: #f0f0f0; */
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.key-icon.button:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .control-panel {
+    font-size: 2rem;
+  }
+
+  .title,
+  .timer-char {
+    font-size: 1.5rem;
+  }
+
+  .key-icon.button {
+    width: 20rem;
+    height: 7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .control-panel {
+    font-size: 1.5rem;
+  }
+
+  .title,
+  .timer-char {
+    font-size: 1rem;
+  }
+
+  .key-icon.button {
+    width: 15rem;
+    height: 5rem;
+  }
+}
+
+.brick_red {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #ff6b54ff;
+  border-left: var(--brickHalfWidth) solid #e64d3cff;
+  border-right: var(--brickHalfWidth) solid #c72e26ff;
+  border-bottom: var(--brickHalfWidth) solid #a60011ff;
+}
+
+.brick_blue {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #56b0f5ff;
+  border-left: var(--brickHalfWidth) solid #3296d9ff;
+  border-right: var(--brickHalfWidth) solid #007ebdff;
+  border-bottom: var(--brickHalfWidth) solid #0265a3ff;
+}
+
+.brick_yellow {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #ffde3bff;
+  border-left: var(--brickHalfWidth) solid #f0c20cff;
+  border-right: var(--brickHalfWidth) solid #d1a700ff;
+  border-bottom: var(--brickHalfWidth) solid #b38f02ff;
+}
+
+.brick_green {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #b7e856ff;
+  border-left: var(--brickHalfWidth) solid #9acc37ff;
+  border-right: var(--brickHalfWidth) solid #83b314ff;
+  border-bottom: var(--brickHalfWidth) solid #649600ff;
+}
+
+.brick_orange {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #ff9940ff;
+  border-left: var(--brickHalfWidth) solid #e67d22ff;
+  border-right: var(--brickHalfWidth) solid #e67d22ff;
+  border-bottom: var(--brickHalfWidth) solid #a84d02ff;
+}
+
+.brick_purple {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #b872d4ff;
+  border-left: var(--brickHalfWidth) solid #9a5ab8ff;
+  border-right: var(--brickHalfWidth) solid #833f9eff;
+  border-bottom: var(--brickHalfWidth) solid #672782ff;
+}
+
+.brick_skyBlue {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #4bd6b6ff;
+  border-left: var(--brickHalfWidth) solid #2abd9dff;
+  border-right: var(--brickHalfWidth) solid #009e81ff;
+  border-bottom: var(--brickHalfWidth) solid #018568ff;
+}
+
+.brick_gray {
+  width: 0;
+  height: 0;
+  border-top: var(--brickHalfWidth) solid #dededeff;
+  border-left: var(--brickHalfWidth) solid #c2c2c2ff;
+  border-right: var(--brickHalfWidth) solid #a6a6a6ff;
+  border-bottom: var(--brickHalfWidth) solid #8c8c8cff;
+}
+
+.empty_brick {
+  width: var(--brickWidth);
+  height: var(--brickWidth);
+}
+
+.brick_border {
+  border: 1px solid #1c1c1cff;
+  box-sizing: content-box;
+}
+
+.arrow:hover {
+  color: #ddbea9;
+  transition: color 0.3s; 
+}
